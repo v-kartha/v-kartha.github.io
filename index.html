@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,7 +42,12 @@
       <li><a href="#stack">Stack</a></li>
       <li><a href="#contact" class="nav-cta">Get in touch →</a></li>
     </ul>
-  </nav>
+  
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</nav>
 
   <!-- HERO -->
   <header class="hero" id="top">
@@ -214,8 +219,8 @@
         <div class="profile-frame">
           <div class="profile-ring"></div>
           <div class="profile-photo">
-            <img src="profile.jpeg" alt="Vivek Kartha" />
-            
+            <!-- Replace with: <img src="profile.jpg" alt="Vivek Kartha" /> -->
+            <div class="profile-placeholder">VK</div>
           </div>
           <div class="profile-badge profile-badge-1">🇬🇧 UK</div>
           <div class="profile-badge profile-badge-2">📊 Data</div>
@@ -455,7 +460,7 @@
 
     <div class="stack-grid">
       <div class="stack-card stack-card-indigo">
-        <div class="stack-icon">🗄️</div>
+        <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg></div>
         <h3 class="stack-label">Data &amp; SQL</h3>
         <div class="stack-chips">
           <span>SQL</span><span>BigQuery</span><span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>dbt</span>
@@ -463,7 +468,7 @@
       </div>
 
       <div class="stack-card stack-card-coral">
-        <div class="stack-icon">🐍</div>
+        <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
         <h3 class="stack-label">Languages</h3>
         <div class="stack-chips">
           <span>Python</span><span>JavaScript</span><span>C++</span>
@@ -471,7 +476,7 @@
       </div>
 
       <div class="stack-card stack-card-mint">
-        <div class="stack-icon">🤖</div>
+        <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.14Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.14Z"/></svg></div>
         <h3 class="stack-label">Machine Learning</h3>
         <div class="stack-chips">
           <span>XGBoost</span><span>SHAP</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span>
@@ -479,7 +484,7 @@
       </div>
 
       <div class="stack-card stack-card-amber">
-        <div class="stack-icon">📈</div>
+        <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
         <h3 class="stack-label">Visualisation</h3>
         <div class="stack-chips">
           <span>Power BI</span><span>Redash</span><span>Streamlit</span><span>Chart.js</span><span>D3</span>
@@ -487,7 +492,7 @@
       </div>
 
       <div class="stack-card stack-card-purple">
-        <div class="stack-icon">⚙️</div>
+        <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3 class="stack-label">Engineering</h3>
         <div class="stack-chips">
           <span>FastAPI</span><span>REST APIs</span><span>SQLAlchemy</span><span>Git</span><span>Linux</span>
@@ -495,7 +500,7 @@
       </div>
 
       <div class="stack-card stack-card-teal">
-        <div class="stack-icon">🎯</div>
+        <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
         <h3 class="stack-label">Practice</h3>
         <div class="stack-chips">
           <span>Cohort Analysis</span><span>Funnel Tracking</span><span>A/B Testing</span><span>Agile/Scrum</span><span>Product Ownership</span>

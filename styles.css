@@ -379,7 +379,7 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .viz-card {
-  background: white;
+  background: var(--bg);
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
@@ -499,7 +499,7 @@ img, svg { display: block; max-width: 100%; }
 /* Floating cards */
 .float-card {
   position: absolute;
-  background: white;
+  background: var(--bg-soft);
   border: 1px solid var(--rule);
   border-radius: var(--radius-md);
   padding: 0.85rem 1rem;
@@ -570,7 +570,7 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .stat {
-  background: white;
+  background: var(--bg-soft);
   border: 1px solid var(--rule);
   border-radius: var(--radius-md);
   padding: 1.25rem;
@@ -852,7 +852,7 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .project {
-  background: white;
+  background: var(--bg-soft);
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1080,7 +1080,7 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .stack-card {
-  background: white;
+  background: var(--bg-soft);
   border: 1px solid var(--rule);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
@@ -1151,8 +1151,9 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .stack-card:hover .stack-chips span {
-  background: var(--card-color);
-  color: white;
+  background: color-mix(in srgb, var(--card-color) 15%, var(--bg-soft));
+  color: var(--card-color);
+  border-color: color-mix(in srgb, var(--card-color) 30%, transparent);
 }
 
 /* =========================================================
@@ -1344,4 +1345,167 @@ img, svg { display: block; max-width: 100%; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* =========================================================
+   DARK MODE TOGGLE BUTTON
+   ========================================================= */
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid var(--rule);
+  background: var(--bg-soft);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  transition: all 0.2s var(--ease);
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.theme-toggle:hover {
+  background: var(--bg);
+  color: var(--ink);
+  border-color: var(--indigo);
+  transform: rotate(15deg);
+}
+
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s var(--ease);
+}
+
+/* Show sun in dark mode, moon in light mode */
+[data-theme="light"] .icon-sun { display: none; }
+[data-theme="light"] .icon-moon { display: block; }
+[data-theme="dark"]  .icon-moon { display: none; }
+[data-theme="dark"]  .icon-sun  { display: block; }
+
+/* =========================================================
+   NAV ACTIVE LINK
+   ========================================================= */
+.nav-links a.active {
+  color: var(--indigo);
+}
+
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
+/* =========================================================
+   THEME TRANSITION (smooth toggle)
+   ========================================================= */
+.theme-transitioning,
+.theme-transitioning *,
+.theme-transitioning *::before,
+.theme-transitioning *::after {
+  transition:
+    background-color 300ms ease,
+    border-color 300ms ease,
+    color 300ms ease,
+    box-shadow 300ms ease !important;
+  transition-delay: 0ms !important;
+}
+
+/* =========================================================
+   DARK MODE VARIABLES
+   ========================================================= */
+[data-theme="dark"] {
+  --bg:        #0f172a;
+  --bg-soft:   #1e293b;
+  --bg-tint:   #16103a;
+  --bg-tint-2: #0c1a2e;
+  --ink:       #f1f5f9;
+  --ink-soft:  #94a3b8;
+  --ink-mute:  #475569;
+  --rule:      #334155;
+
+  --indigo-bg: rgba(79,  70, 229, 0.18);
+  --coral-bg:  rgba(244, 63,  94, 0.15);
+  --mint-bg:   rgba(16, 185, 129, 0.13);
+  --amber-bg:  rgba(245,158,  11, 0.13);
+  --purple-bg: rgba(168, 85, 247, 0.13);
+  --teal-bg:   rgba(20, 184, 166, 0.13);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3),  0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.35), 0 10px 15px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.4), 0 20px 25px rgba(0,0,0,0.45);
+  --shadow-glow: 0 0 60px rgba(79, 70, 229, 0.3);
+}
+
+/* Nav background in dark mode */
+[data-theme="dark"] .nav {
+  background: rgba(15, 23, 42, 0.80);
+}
+[data-theme="dark"] .nav.scrolled {
+  background: rgba(15, 23, 42, 0.96);
+}
+
+/* Mesh blobs: slightly more visible in dark */
+[data-theme="dark"] .mesh-blob-1 { opacity: 0.65; }
+[data-theme="dark"] .mesh-blob-2 { opacity: 0.45; }
+[data-theme="dark"] .mesh-blob-3 { opacity: 0.40; }
+
+/* Primary buttons stay indigo in dark mode */
+[data-theme="dark"] .btn-primary {
+  background: var(--indigo);
+  color: #fff;
+}
+[data-theme="dark"] .btn-primary:hover {
+  background: var(--indigo-soft);
+}
+
+/* Nav CTA in dark mode */
+[data-theme="dark"] .nav-cta {
+  background: var(--indigo) !important;
+  color: #fff !important;
+}
+
+/* Stack card icon uses card color as tint in dark mode */
+[data-theme="dark"] .stack-icon {
+  background: var(--bg);
+}
+
+/* Viz card */
+[data-theme="dark"] .viz-card {
+  background: var(--bg-soft);
+}
+
+/* Profile ring — keep vibrant */
+[data-theme="dark"] .profile-ring {
+  opacity: 0.9;
+}
+
+/* Hero tag green pill in dark mode */
+[data-theme="dark"] .hero-tag {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+/* CTA card blobs slightly brighter in dark */
+[data-theme="dark"] .cta-blob-1 { opacity: 0.55; }
+[data-theme="dark"] .cta-blob-2 { opacity: 0.45; }
+
+/* Stack card icon SVG inherits color */
+.stack-icon svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* Stack card color-matched icons */
+.stack-card-indigo .stack-icon { color: var(--indigo); }
+.stack-card-coral  .stack-icon { color: var(--coral); }
+.stack-card-mint   .stack-icon { color: var(--mint); }
+.stack-card-amber  .stack-icon { color: var(--amber); }
+.stack-card-purple .stack-icon { color: var(--purple); }
+.stack-card-teal   .stack-icon { color: var(--teal); }
+
+/* Fix float card z-index on mobile */
+@media (max-width: 600px) {
+  .float-card { display: none; }
 }
