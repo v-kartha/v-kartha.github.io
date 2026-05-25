@@ -82,6 +82,68 @@
     revealTargets.forEach(el => revealObserver.observe(el));
   }
 
+  // ── Commitly screenshot carousel ─────────────────────
+  const carousel = document.getElementById('commitlyScreenshots');
+  if (carousel) {
+    const shots = carousel.querySelectorAll('.project-screenshot');
+    const dots  = carousel.querySelectorAll('.screenshot-dot');
+    let current = 0;
+    let timer;
+
+    function showSlide(index) {
+      shots[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = index;
+      shots[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function startTimer() {
+      timer = setInterval(() => showSlide((current + 1) % shots.length), 3500);
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(timer);
+        showSlide(i);
+        startTimer();
+      });
+    });
+
+    startTimer();
+  }
+
+  // ── ECI dashboard screenshot carousel ────────────────
+  const eciCarousel = document.getElementById('eciScreenshots');
+  if (eciCarousel) {
+    const eciShots = eciCarousel.querySelectorAll('.project-screenshot');
+    const eciDots  = eciCarousel.querySelectorAll('.screenshot-dot');
+    let eciCurrent = 0;
+    let eciTimer;
+
+    function showEciSlide(index) {
+      eciShots[eciCurrent].classList.remove('active');
+      eciDots[eciCurrent].classList.remove('active');
+      eciCurrent = index;
+      eciShots[eciCurrent].classList.add('active');
+      eciDots[eciCurrent].classList.add('active');
+    }
+
+    function startEciTimer() {
+      eciTimer = setInterval(() => showEciSlide((eciCurrent + 1) % eciShots.length), 3500);
+    }
+
+    eciDots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(eciTimer);
+        showEciSlide(i);
+        startEciTimer();
+      });
+    });
+
+    startEciTimer();
+  }
+
   // ── Mobile hamburger ─────────────────────────────────
   const hamburger = document.getElementById('hamburger');
   const drawer = document.getElementById('mobileDrawer');

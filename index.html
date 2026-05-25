@@ -345,27 +345,22 @@
       <!-- Project 2: Commitly -->
       <article class="project">
         <div class="project-visual project-visual-gradient-2">
-          <svg viewBox="0 0 400 240" class="project-mock">
-            <rect x="0" y="0" width="400" height="240" rx="8" fill="rgba(255,255,255,0.1)"/>
-            <circle cx="14" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <circle cx="28" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <circle cx="42" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <!-- Mock cards -->
-            <g transform="translate(24, 40)">
-              <rect x="0"   y="0"   width="160" height="56" rx="8" fill="rgba(255,255,255,0.85)"/>
-              <rect x="0"   y="68"  width="160" height="56" rx="8" fill="rgba(255,255,255,0.7)"/>
-              <rect x="0"   y="136" width="160" height="56" rx="8" fill="rgba(255,255,255,0.55)"/>
-              <rect x="184" y="0"   width="160" height="56" rx="8" fill="rgba(255,255,255,0.55)"/>
-              <rect x="184" y="68"  width="160" height="56" rx="8" fill="rgba(255,255,255,0.85)"/>
-              <rect x="184" y="136" width="160" height="56" rx="8" fill="rgba(255,255,255,0.7)"/>
-              <!-- Mini bars -->
-              <rect x="10"  y="20" width="80" height="6" rx="3" fill="rgba(99,102,241,0.6)"/>
-              <rect x="10"  y="32" width="50" height="4" rx="2" fill="rgba(99,102,241,0.3)"/>
-              <rect x="194" y="88" width="100" height="6" rx="3" fill="rgba(244,63,94,0.6)"/>
-              <rect x="194" y="100" width="60" height="4" rx="2" fill="rgba(244,63,94,0.3)"/>
-            </g>
-            <text x="20" y="220" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="11">commitly_dashboard.py</text>
-          </svg>
+          <div class="project-screenshots" id="commitlyScreenshots">
+            <img class="project-screenshot active" src="screenshots/commitly-landing.png"      alt="Commitly landing page" />
+            <img class="project-screenshot"        src="screenshots/commitly-dashboard.png"   alt="Commitly dashboard" />
+            <img class="project-screenshot"        src="screenshots/commitly-commitments.png" alt="Commitly commitments" />
+            <img class="project-screenshot"        src="screenshots/commitly-groups.png"      alt="Commitly study groups" />
+            <img class="project-screenshot"        src="screenshots/commitly-create-group.png" alt="Commitly create group" />
+            <img class="project-screenshot"        src="screenshots/commitly-profile.png"     alt="Commitly profile" />
+            <div class="screenshot-dots">
+              <button class="screenshot-dot active" data-index="0" aria-label="Landing"></button>
+              <button class="screenshot-dot" data-index="1" aria-label="Dashboard"></button>
+              <button class="screenshot-dot" data-index="2" aria-label="Commitments"></button>
+              <button class="screenshot-dot" data-index="3" aria-label="Study Groups"></button>
+              <button class="screenshot-dot" data-index="4" aria-label="Create Group"></button>
+              <button class="screenshot-dot" data-index="5" aria-label="Profile"></button>
+            </div>
+          </div>
         </div>
         <div class="project-body">
           <div class="project-meta">
@@ -385,20 +380,24 @@
 
       <!-- Project 3: Civic Tech -->
       <article class="project">
-        <div class="project-visual project-visual-gradient-3">
-          <svg viewBox="0 0 400 240" class="project-mock">
-            <rect x="0" y="0" width="400" height="240" rx="8" fill="rgba(255,255,255,0.1)"/>
-            <circle cx="14" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <circle cx="28" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <circle cx="42" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <!-- Sankey-style flow lines -->
-            <g transform="translate(40, 50)" opacity="0.85">
-              <path d="M 0,30 C 100,30 100,10 200,10 L 320,10 L 320,28 L 200,28 C 100,28 100,48 0,48 Z" fill="rgba(255,255,255,0.9)"/>
-              <path d="M 0,70 C 100,70 100,50 200,50 L 320,50 L 320,68 L 200,68 C 100,68 100,88 0,88 Z" fill="rgba(255,255,255,0.7)"/>
-              <path d="M 0,110 C 100,110 100,90 200,90 L 320,90 L 320,108 L 200,108 C 100,108 100,128 0,128 Z" fill="rgba(255,255,255,0.5)"/>
-            </g>
-            <text x="20" y="220" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="11">budget_sankey.html</text>
-          </svg>
+        <div class="project-visual project-visual-gradient-civic">
+          <div class="project-screenshots" id="eciScreenshots">
+            <img class="project-screenshot active" src="screenshots/eci-overview.png" alt="ECI Lok Sabha 2024 — Overview" />
+            <img class="project-screenshot" src="screenshots/eci-parties.png" alt="ECI Lok Sabha 2024 — Party Results" />
+            <img class="project-screenshot" src="screenshots/eci-turnout.png" alt="ECI Lok Sabha 2024 — State Turnout" />
+            <div class="eci-overlay-bar">
+              <div class="eci-highlights">
+                <div class="eci-hl"><span class="eci-hl-n">968M</span><span class="eci-hl-l">Electors</span></div>
+                <div class="eci-hl"><span class="eci-hl-n">65.79%</span><span class="eci-hl-l">Turnout</span></div>
+                <div class="eci-hl"><span class="eci-hl-n">543</span><span class="eci-hl-l">Seats</span></div>
+              </div>
+              <div class="eci-dots">
+                <button class="screenshot-dot active" data-index="0" aria-label="Overview"></button>
+                <button class="screenshot-dot" data-index="1" aria-label="Party Results"></button>
+                <button class="screenshot-dot" data-index="2" aria-label="State Turnout"></button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="project-body">
           <div class="project-meta">
@@ -408,7 +407,7 @@
           </div>
           <h3 class="project-title">Civic Tech Data Visualisation Dashboards</h3>
           <p class="project-desc">
-            Single-file, deployable interactive dashboards on Indian civic and economic data: Union Budget Sankey diagram, Election Commission dashboards, and a Progressive Web App redesign concept for myneta.info. A personal exploration of data journalism.
+            Interactive dashboards visualising Indian election and budget data. Raw data scraped and structured from ECI results portals, data.gov.in, and official government press notes. Built as single deployable HTML files — no server, no backend, no dependencies.
           </p>
           <div class="project-stack">
             <span>HTML/JS</span><span>Chart.js</span><span>D3</span><span>PWA</span>
