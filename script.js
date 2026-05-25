@@ -82,6 +82,28 @@
     revealTargets.forEach(el => revealObserver.observe(el));
   }
 
+  // ── Mobile hamburger ─────────────────────────────────
+  const hamburger = document.getElementById('hamburger');
+  const drawer = document.getElementById('mobileDrawer');
+
+  if (hamburger && drawer) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      drawer.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      drawer.setAttribute('aria-hidden', !isOpen);
+    });
+
+    drawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        drawer.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+        drawer.setAttribute('aria-hidden', true);
+      });
+    });
+  }
+
   // ── Smooth scroll with nav offset ────────────────────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
