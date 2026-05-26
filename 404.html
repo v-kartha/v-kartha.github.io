@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Vivek Kartha</title>
+  <meta name="description" content="That page doesn't exist. Head back to vivekkartha.com." />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%234F46E5'/%3E%3Cstop offset='100%25' stop-color='%23F43F5E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='sans-serif' font-size='52' font-weight='700' fill='white' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E" />
+  <style>
+    .nf {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .nf-inner { max-width: 520px; }
+    .nf-code {
+      font-family: var(--font-mono);
+      font-size: 7rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      background: linear-gradient(135deg, var(--indigo) 0%, var(--coral) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+    }
+    .nf-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+    .nf-sub {
+      color: var(--ink-soft);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .nf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.5rem;
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      border-radius: 100px;
+      font-weight: 500;
+      transition: transform 0.2s var(--ease);
+    }
+    .nf-btn:hover { transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <div class="mesh-bg" aria-hidden="true">
+    <div class="mesh-blob mesh-blob-1"></div>
+    <div class="mesh-blob mesh-blob-2"></div>
+  </div>
+  <main class="nf">
+    <div class="nf-inner">
+      <div class="nf-code">404</div>
+      <h1 class="nf-title">That page wandered off.</h1>
+      <p class="nf-sub">The link is broken or the page has moved. No worries — let's get you back on track.</p>
+      <a href="/" class="nf-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <span>Back to vivekkartha.com</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
