@@ -2525,6 +2525,27 @@ img, svg { display: block; max-width: 100%; }
 }
 
 /* =========================================================
+   INLINE LINKS — in body paragraphs
+   ========================================================= */
+.inline-link {
+  color: var(--indigo);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px dashed color-mix(in srgb, var(--indigo) 35%, transparent);
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.inline-link:hover {
+  color: var(--coral);
+  border-bottom-color: var(--coral);
+}
+
+[data-theme="dark"] .inline-link {
+  color: #818cf8;
+  border-bottom-color: rgba(129, 140, 248, 0.4);
+}
+
+/* =========================================================
    CTA FINEPRINT — references + response time
    ========================================================= */
 .cta-fineprint {
