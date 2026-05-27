@@ -1453,8 +1453,12 @@ img, svg { display: block; max-width: 100%; }
 
 .stack-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   gap: 1.25rem;
+}
+
+@media (min-width: 1100px) {
+  .stack-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 .stack-card {
@@ -2440,7 +2444,6 @@ img, svg { display: block; max-width: 100%; }
   background: var(--indigo-bg);
   padding: 0.3rem 0.75rem;
   border-radius: 100px;
-  margin-bottom: 0.85rem;
   border: 1px solid color-mix(in srgb, var(--indigo) 18%, transparent);
 }
 
