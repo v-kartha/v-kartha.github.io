@@ -2414,3 +2414,124 @@ img, svg { display: block; max-width: 100%; }
     white-space: nowrap;
   }
 }
+
+/* =========================================================
+   HIRING SNAPSHOT — recruiter-scannable summary card
+   ========================================================= */
+.snapshot {
+  max-width: var(--max);
+  margin: 1.5rem auto 3rem;
+  padding: 0 var(--gutter);
+}
+
+.snapshot-head {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.snapshot-kicker {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--indigo);
+  background: var(--indigo-bg);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  margin-bottom: 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--indigo) 18%, transparent);
+}
+
+.snapshot-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background: var(--bg-soft);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.snap-card {
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, var(--bg-tint) 0%, transparent 100%);
+  border: 1px solid color-mix(in srgb, var(--indigo) 8%, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.snap-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.snap-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.snap-value {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.snap-value strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .snapshot-grid { grid-template-columns: repeat(2, 1fr); padding: 1rem; }
+}
+
+@media (max-width: 600px) {
+  .snapshot-grid { grid-template-columns: 1fr; }
+}
+
+[data-theme="dark"] .snapshot-grid {
+  background: rgba(30, 41, 59, 0.5);
+  border-color: rgba(148, 163, 184, 0.12);
+}
+
+[data-theme="dark"] .snap-card {
+  background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, transparent 100%);
+  border-color: rgba(99, 102, 241, 0.15);
+}
+
+[data-theme="dark"] .snapshot-kicker {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+/* =========================================================
+   CTA FINEPRINT — references + response time
+   ========================================================= */
+.cta-fineprint {
+  margin-top: 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
