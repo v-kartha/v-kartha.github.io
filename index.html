@@ -129,9 +129,14 @@
   <header class="hero" id="top">
     <div class="hero-grid">
       <div class="hero-content">
-        <div class="hero-tag">
-          <span class="dot"></span>
-          <span>Available for UK roles · Graduate Visa from Sep 2026</span>
+        <div class="hero-author">
+          <img src="profile.jpeg" alt="Vivek Kartha" class="hero-avatar" />
+          <span class="hero-author-name">Vivek Kartha</span>
+          <span class="hero-author-sep">·</span>
+          <span class="hero-author-tag">
+            <span class="dot"></span>
+            Available for UK roles · Sep 2026
+          </span>
         </div>
         <h1 class="hero-title">
           <span class="hero-line">Senior Data Analyst</span>
@@ -240,11 +245,11 @@
       <span class="currently-pulse" aria-hidden="true"></span>
       <span class="currently-kicker">Currently</span>
       <span class="currently-divider">·</span>
-      <span class="currently-item">Finishing MSc dissertation</span>
+      <span class="currently-item">MSc dissertation · Sep 2026</span>
       <span class="currently-divider">·</span>
-      <span class="currently-item"><strong>UK Graduate Visa eligible Sep 2026</strong> (no sponsorship required)</span>
+      <span class="currently-item"><strong>UK Graduate Visa</strong> · no sponsorship required</span>
       <span class="currently-divider">·</span>
-      <span class="currently-item">Open to early conversations now</span>
+      <span class="currently-item">Open to conversations now</span>
     </div>
   </section>
 
@@ -294,7 +299,6 @@
   <!-- ABOUT -->
   <section class="section" id="about">
     <div class="section-head">
-      <span class="section-num">01</span>
       <h2 class="section-title">About me</h2>
       <p class="section-sub">Ten years of analytics leadership across product, growth, and engineering — targeting UK roles.</p>
     </div>
@@ -345,13 +349,10 @@
           I work at the intersection of <span class="hl hl-indigo">analytics</span>, <span class="hl hl-coral">product</span>, and <span class="hl hl-mint">engineering</span> — designing KPI frameworks that survive scale, building behavioural segmentation that drives measurable engagement, and owning the data quality standards that leadership decisions actually depend on.
         </p>
         <p>
-          For the last six years I led analytics at <strong>CropBytes</strong>, a blockchain gaming platform. I joined as the early analytics hire and was part of the team that scaled the product from a couple of thousand users to over 650,000. Along the way I designed an in-app notification system using behavioural segmentation that delivered a 60% uplift in engagement, built decision-critical dashboards used in quarterly roadmap planning, and acted as the cross-functional accountability point for data quality.
+          At <strong>CropBytes</strong> I joined as the founding analytics hire and helped scale the platform from 2,000 to 650,000+ users. I built the notification engine (60% engagement uplift), owned the KPI framework used in exec OKR planning, and was the cross-functional accountability point for data quality across product, engineering, and growth.
         </p>
         <p>
-          I'm now completing an <strong>MSc in Computer Science at Aberystwyth University</strong> (graduating September 2026). My dissertation builds a production-style fraud detection pipeline on the IEEE-CIS dataset, comparing whether structured feature engineering through dbt measurably improves XGBoost classifier accuracy versus raw transaction inputs.
-        </p>
-        <p>
-          I'll be eligible for the <strong>UK Graduate Visa from September 2026</strong> — no employer sponsorship required for the first two years post-graduation. I'm targeting Analytics Engineering, Senior Data Analyst, and Product Analyst roles in UK fintech, iGaming, and blockchain analytics.
+          I'm now finishing an <strong>MSc in Computer Science at Aberystwyth University</strong>, with a dissertation building a production fraud detection pipeline using dbt, BigQuery, XGBoost and SHAP on the IEEE-CIS dataset. Targeting <strong>Analytics Engineering, Senior Data Analyst, and Product Analyst</strong> roles in UK fintech, iGaming, and blockchain analytics.
         </p>
       </div>
     </div>
@@ -360,68 +361,13 @@
   <!-- WORK -->
   <section class="section section-work" id="work">
     <div class="section-head">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Selected work</h2>
-      <p class="section-sub">Projects across MSc research, applied software, and side explorations.</p>
+      <h2 class="section-title">Work</h2>
+      <p class="section-sub">Shipped products, MSc research, and side explorations.</p>
     </div>
 
     <div class="projects">
 
-      <!-- Project 1: MSc Fraud Detection -->
-      <article class="project">
-        <div class="project-visual project-visual-gradient-1">
-          <!-- Decorative SVG mock dashboard -->
-          <svg viewBox="0 0 400 240" class="project-mock">
-            <defs>
-              <linearGradient id="mock1-line" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
-                <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.5"/>
-              </linearGradient>
-            </defs>
-            <!-- Window chrome -->
-            <rect x="0" y="0" width="400" height="240" rx="8" fill="rgba(255,255,255,0.1)"/>
-            <circle cx="14" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <circle cx="28" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <circle cx="42" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
-            <!-- Mock chart bars -->
-            <g transform="translate(20, 40)">
-              <rect x="0"   y="80" width="22" height="80" rx="3" fill="rgba(255,255,255,0.8)"/>
-              <rect x="30"  y="60" width="22" height="100" rx="3" fill="rgba(255,255,255,0.7)"/>
-              <rect x="60"  y="40" width="22" height="120" rx="3" fill="rgba(255,255,255,0.85)"/>
-              <rect x="90"  y="20" width="22" height="140" rx="3" fill="rgba(255,255,255,0.95)"/>
-              <rect x="120" y="50" width="22" height="110" rx="3" fill="rgba(255,255,255,0.6)"/>
-              <rect x="150" y="30" width="22" height="130" rx="3" fill="rgba(255,255,255,0.75)"/>
-              <rect x="180" y="10" width="22" height="150" rx="3" fill="rgba(255,255,255,1)"/>
-            </g>
-            <!-- Line overlay -->
-            <path d="M 30,100 Q 90,80 150,60 T 280,30 L 360,15" stroke="url(#mock1-line)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.9"/>
-            <!-- Label -->
-            <text x="20" y="220" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="11">fraud_detection_pipeline.ipynb</text>
-          </svg>
-        </div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-pill project-pill-active">● In progress</span>
-            <span class="project-period">May – Sep 2026</span>
-            <span class="project-type">MSc Research Project</span>
-          </div>
-          <h3 class="project-title">Fraud Detection Pipeline using Analytics Engineering &amp; ML</h3>
-          <p class="project-desc">
-            End-to-end fraud detection system on the IEEE-CIS dataset (590K transactions, 3.5% fraud rate). BigQuery ingestion, dbt feature engineering, XGBoost classification, SHAP explainability. Research question: does layered dbt feature engineering measurably improve detection vs raw inputs?
-          </p>
-          <div class="project-stack">
-            <span>BigQuery</span><span>dbt</span><span>Python</span><span>XGBoost</span><span>SHAP</span><span>Streamlit</span>
-          </div>
-          <div class="project-actions">
-            <a href="https://github.com/v-kartha" target="_blank" rel="noopener" class="project-link">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
-              <span>Source on GitHub</span>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- Project 2: Commitly -->
+      <!-- Project 1: Commitly (shipped — lead with delivery) -->
       <article class="project">
         <div class="project-visual project-visual-gradient-2">
           <div class="project-screenshots" id="commitlyScreenshots">
@@ -453,6 +399,55 @@
           </p>
           <div class="project-stack">
             <span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>JWT</span><span>Python</span><span>Scrum</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/v-kartha" target="_blank" rel="noopener" class="project-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 002 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+              <span>Source on GitHub</span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: MSc Fraud Detection -->
+      <article class="project">
+        <div class="project-visual project-visual-gradient-1">
+          <svg viewBox="0 0 400 240" class="project-mock">
+            <defs>
+              <linearGradient id="mock1-line" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+                <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="400" height="240" rx="8" fill="rgba(255,255,255,0.1)"/>
+            <circle cx="14" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
+            <circle cx="28" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
+            <circle cx="42" cy="14" r="4" fill="rgba(255,255,255,0.5)"/>
+            <g transform="translate(20, 40)">
+              <rect x="0"   y="80" width="22" height="80" rx="3" fill="rgba(255,255,255,0.8)"/>
+              <rect x="30"  y="60" width="22" height="100" rx="3" fill="rgba(255,255,255,0.7)"/>
+              <rect x="60"  y="40" width="22" height="120" rx="3" fill="rgba(255,255,255,0.85)"/>
+              <rect x="90"  y="20" width="22" height="140" rx="3" fill="rgba(255,255,255,0.95)"/>
+              <rect x="120" y="50" width="22" height="110" rx="3" fill="rgba(255,255,255,0.6)"/>
+              <rect x="150" y="30" width="22" height="130" rx="3" fill="rgba(255,255,255,0.75)"/>
+              <rect x="180" y="10" width="22" height="150" rx="3" fill="rgba(255,255,255,1)"/>
+            </g>
+            <path d="M 30,100 Q 90,80 150,60 T 280,30 L 360,15" stroke="url(#mock1-line)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.9"/>
+            <text x="20" y="220" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="11">fraud_detection_pipeline.ipynb</text>
+          </svg>
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="project-pill project-pill-active">● In progress</span>
+            <span class="project-period">May – Sep 2026</span>
+            <span class="project-type">MSc Research Project</span>
+          </div>
+          <h3 class="project-title">Fraud Detection Pipeline using Analytics Engineering &amp; ML</h3>
+          <p class="project-desc">
+            End-to-end fraud detection pipeline on the IEEE-CIS dataset (590K transactions, 3.5% fraud rate). BigQuery ingestion → structured dbt feature layers → XGBoost classification → SHAP explainability. Benchmarks engineered features against raw inputs across AUC-ROC and precision-recall, with a Streamlit dashboard for audit-trail visibility.
+          </p>
+          <div class="project-stack">
+            <span>BigQuery</span><span>dbt</span><span>Python</span><span>XGBoost</span><span>SHAP</span><span>Streamlit</span>
           </div>
           <div class="project-actions">
             <a href="https://github.com/v-kartha" target="_blank" rel="noopener" class="project-link">
@@ -511,7 +506,6 @@
   <!-- EXPERIENCE -->
   <section class="section" id="experience">
     <div class="section-head">
-      <span class="section-num">03</span>
       <h2 class="section-title">Experience</h2>
       <p class="section-sub">Ten years across product analytics, systems engineering, and analytics leadership.</p>
     </div>
@@ -525,6 +519,7 @@
         <div class="role-body">
           <h3 class="role-title">Senior Data Analyst</h3>
           <div class="role-company">
+            <span class="role-logo role-logo-cb">CB</span>
             <span class="role-company-name">CropBytes</span>
             <span class="role-company-tag">Blockchain Gaming Platform · India</span>
           </div>
@@ -544,6 +539,7 @@
         <div class="role-body">
           <h3 class="role-title">Data Analyst</h3>
           <div class="role-company">
+            <span class="role-logo role-logo-cb">CB</span>
             <span class="role-company-name">CropBytes</span>
             <span class="role-company-tag">Blockchain Gaming Platform · India</span>
           </div>
@@ -562,6 +558,7 @@
         <div class="role-body">
           <h3 class="role-title">Systems Engineer</h3>
           <div class="role-company">
+            <span class="role-logo role-logo-es">eS</span>
             <span class="role-company-name">electroSome</span>
             <span class="role-company-tag">India</span>
           </div>
@@ -579,7 +576,6 @@
   <!-- EDUCATION -->
   <section class="section" id="education">
     <div class="section-head">
-      <span class="section-num">04</span>
       <h2 class="section-title">Education</h2>
       <p class="section-sub">MSc Computer Science, with a dissertation on fraud detection and machine learning.</p>
     </div>
@@ -599,7 +595,7 @@
       <div class="edu-dissertation">
         <div class="edu-dissertation-label">Dissertation</div>
         <p class="edu-dissertation-title">Fraud Detection Pipeline Using Analytics Engineering &amp; Machine Learning</p>
-        <p class="edu-dissertation-desc">Building a production-style fraud detection pipeline on the IEEE-CIS Fraud Detection dataset (590K real anonymised transactions, 3.5% fraud rate). Research question: does structured feature engineering through a layered dbt pipeline measurably improve fraud detection accuracy vs raw transaction inputs? Evaluated using AUC-ROC and precision-recall. Supervised by Dr Bernie Tiddeman.</p>
+        <p class="edu-dissertation-desc">Production-style fraud detection pipeline on the IEEE-CIS dataset (590K transactions, 3.5% fraud rate). BigQuery ingestion → structured dbt feature layers → XGBoost classification → SHAP explainability. Benchmarks engineered features against raw inputs on AUC-ROC and precision-recall. Supervised by Dr Bernie Tiddeman.</p>
         <div class="edu-stack">
           <span>BigQuery</span><span>dbt Core</span><span>Python</span><span>XGBoost</span><span>SHAP</span><span>Streamlit</span>
         </div>
@@ -622,7 +618,6 @@
   <!-- STACK -->
   <section class="section section-stack" id="stack">
     <div class="section-head">
-      <span class="section-num">05</span>
       <h2 class="section-title">Tools I work with</h2>
       <p class="section-sub">End-to-end data stack from raw SQL to ML explainability.</p>
     </div>
@@ -695,10 +690,9 @@
       </div>
 
       <div class="cta-content">
-        <span class="section-num section-num-light">06</span>
-        <h2 class="cta-title">Let's build something.</h2>
+        <h2 class="cta-title">Available from <span class="cta-title-hl">September 2026.</span></h2>
         <p class="cta-sub">
-          If you're hiring for <strong>senior analytics, analytics engineering, or product analytics</strong> roles in UK fintech, iGaming, or blockchain analytics — or you're working on something interesting at the intersection of data and product — I'd love to talk.
+          I'm open to early conversations now. If you're hiring for <strong>Senior Data Analyst, Analytics Engineer, or Product Analyst</strong> roles in UK fintech, iGaming, or blockchain analytics — let's talk before the good candidates are gone.
         </p>
 
         <div class="rtw-card">

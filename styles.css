@@ -1004,7 +1004,7 @@ img, svg { display: block; max-width: 100%; }
 
 
 .project-visual-gradient-civic {
-  background: linear-gradient(135deg, #FF6B1A 0%, #7c3aed 55%, #1e1b4b 100%);
+  background: linear-gradient(135deg, #064e3b 0%, #0d9488 45%, #0e7490 75%, #0c4a6e 100%);
 }
 
 .eci-overlay-bar {
@@ -1265,6 +1265,10 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .role-company {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
   margin-bottom: 0.85rem;
   font-size: 0.92rem;
 }
@@ -1276,7 +1280,6 @@ img, svg { display: block; max-width: 100%; }
 
 .role-company-tag {
   color: var(--ink-soft);
-  margin-left: 0.4rem;
 }
 
 .role-body p {
@@ -2287,4 +2290,127 @@ img, svg { display: block; max-width: 100%; }
   .section, .cta-section { page-break-inside: avoid; padding: 1rem 0; }
   a { color: black; text-decoration: none; }
   .project { box-shadow: none !important; border: 1px solid #ddd; }
+}
+
+/* =========================================================
+   HERO AUTHOR ROW — headshot + name + status
+   ========================================================= */
+.hero-author {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--indigo-bg);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--indigo) 12%, transparent);
+  flex-shrink: 0;
+}
+
+.hero-author-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.hero-author-sep {
+  color: var(--ink-mute);
+  font-size: 0.85rem;
+}
+
+.hero-author-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  color: var(--mint);
+  font-weight: 500;
+  background: var(--mint-bg);
+  padding: 0.25rem 0.65rem;
+  border-radius: 100px;
+  border: 1px solid color-mix(in srgb, var(--mint) 22%, transparent);
+}
+
+.hero-author-tag .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--mint);
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .hero-avatar {
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+[data-theme="dark"] .hero-author-tag {
+  background: rgba(15, 157, 120, 0.12);
+  border-color: rgba(15, 157, 120, 0.25);
+}
+
+/* =========================================================
+   COMPANY LOGO MONOGRAMS — experience timeline
+   ========================================================= */
+.role-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.role-logo-cb {
+  background: var(--indigo-bg);
+  color: var(--indigo);
+  border: 1px solid color-mix(in srgb, var(--indigo) 18%, transparent);
+}
+
+.role-logo-es {
+  background: var(--teal-bg);
+  color: var(--teal);
+  border: 1px solid color-mix(in srgb, var(--teal) 18%, transparent);
+}
+
+[data-theme="dark"] .role-logo-cb {
+  background: rgba(54, 86, 217, 0.18);
+  color: #818cf8;
+  border-color: rgba(54, 86, 217, 0.25);
+}
+
+[data-theme="dark"] .role-logo-es {
+  background: rgba(15, 148, 136, 0.18);
+  color: #2dd4bf;
+  border-color: rgba(15, 148, 136, 0.25);
+}
+
+/* =========================================================
+   CTA TITLE HIGHLIGHT
+   ========================================================= */
+.cta-title-hl {
+  background: linear-gradient(120deg, #818cf8, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* =========================================================
+   CURRENTLY STRIP — prevent wrapping at desktop
+   ========================================================= */
+@media (min-width: 900px) {
+  .currently-inner {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
 }
