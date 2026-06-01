@@ -41,6 +41,9 @@
   --sky:          #0284c7;
   --sky-bg:       #e0f2fe;
 
+  --slate:        #5d6b85;
+  --slate-bg:     #eef1f6;
+
   /* Typography */
   --font-display: 'Bricolage Grotesque', 'Plus Jakarta Sans', sans-serif;
   --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
@@ -191,7 +194,7 @@ img, svg { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--indigo), var(--teal));
+  background: linear-gradient(135deg, var(--indigo), var(--coral));
   color: white;
   border-radius: 9px;
   font-weight: 700;
@@ -405,7 +408,7 @@ img, svg { display: block; max-width: 100%; }
 }
 
 .hero-line-grad {
-  background: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 45%, var(--coral) 100%);
+  background: linear-gradient(135deg, var(--indigo) 0%, var(--coral) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1483,13 +1486,14 @@ img, svg { display: block; max-width: 100%; }
   opacity: 0.8;
 }
 
-.stack-card-indigo { --card-color: var(--indigo); }
-.stack-card-coral  { --card-color: var(--coral); }
-.stack-card-mint   { --card-color: var(--mint); }
-.stack-card-amber  { --card-color: var(--amber); }
-.stack-card-purple { --card-color: var(--purple); }
-.stack-card-teal   { --card-color: var(--teal); }
-.stack-card-sky    { --card-color: var(--sky); }
+/* Tightened to a 3-colour system: indigo (brand) · slate (neutral) · coral (accent) */
+.stack-card-indigo { --card-color: var(--indigo); }  /* Data & SQL */
+.stack-card-coral  { --card-color: var(--slate);  }  /* Languages */
+.stack-card-mint   { --card-color: var(--coral);  }  /* Machine Learning */
+.stack-card-amber  { --card-color: var(--slate);  }  /* Visualisation */
+.stack-card-purple { --card-color: var(--indigo); }  /* Engineering */
+.stack-card-teal   { --card-color: var(--slate);  }  /* Practice */
+.stack-card-sky    { --card-color: var(--coral);  }  /* Domain */
 
 .stack-card:hover {
   transform: translateY(-4px);
@@ -2008,12 +2012,12 @@ img, svg { display: block; max-width: 100%; }
 
 /* Stack card color-matched icons */
 .stack-card-indigo .stack-icon { color: var(--indigo); }
-.stack-card-coral  .stack-icon { color: var(--coral); }
-.stack-card-mint   .stack-icon { color: var(--mint); }
-.stack-card-amber  .stack-icon { color: var(--amber); }
-.stack-card-purple .stack-icon { color: var(--purple); }
-.stack-card-teal   .stack-icon { color: var(--teal); }
-.stack-card-sky    .stack-icon { color: var(--sky); }
+.stack-card-coral  .stack-icon { color: var(--slate); }
+.stack-card-mint   .stack-icon { color: var(--coral); }
+.stack-card-amber  .stack-icon { color: var(--slate); }
+.stack-card-purple .stack-icon { color: var(--indigo); }
+.stack-card-teal   .stack-icon { color: var(--slate); }
+.stack-card-sky    .stack-icon { color: var(--coral); }
 
 /* Fix float card z-index on mobile */
 @media (max-width: 600px) {
@@ -2403,7 +2407,7 @@ img, svg { display: block; max-width: 100%; }
    CTA TITLE HIGHLIGHT
    ========================================================= */
 .cta-title-hl {
-  background: linear-gradient(120deg, #818cf8, #f472b6);
+  background: linear-gradient(120deg, var(--indigo), var(--coral));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
