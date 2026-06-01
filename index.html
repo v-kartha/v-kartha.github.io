@@ -387,15 +387,15 @@
         <div class="project-body">
           <div class="project-meta">
             <span class="project-pill project-pill-active">● In progress</span>
-            <span class="project-period">May – Sep 2026</span>
+            <span class="project-period">Apr – Sep 2026</span>
             <span class="project-type">MSc Research Project</span>
           </div>
           <h3 class="project-title">Fraud Detection Pipeline using Analytics Engineering &amp; ML</h3>
           <p class="project-desc">
-            End-to-end fraud detection pipeline on the IEEE-CIS dataset (590K transactions, 3.5% fraud rate). BigQuery ingestion → structured dbt feature layers → XGBoost classification → SHAP explainability. Benchmarks engineered features against raw inputs across AUC-ROC and precision-recall, with a Streamlit dashboard for audit-trail visibility.
+            End-to-end pipeline on the IEEE-CIS dataset (~590K transactions): BigQuery → dbt feature layers (staging / intermediate / mart) → Optuna-tuned XGBoost → SHAP explainability → Power BI dashboard, orchestrated with Airflow and containerised with Docker. Tests whether a structured dbt transformation layer measurably improves model performance over raw features, with an LLM layer summarising SHAP into plain-language risk explanations.
           </p>
           <div class="project-stack">
-            <span>BigQuery</span><span>dbt</span><span>Python</span><span>XGBoost</span><span>SHAP</span><span>Streamlit</span>
+            <span>BigQuery</span><span>dbt</span><span>Airflow</span><span>XGBoost</span><span>SHAP</span><span>Power BI</span><span>Docker</span>
           </div>
           <div class="project-actions">
             <a href="https://github.com/v-kartha" target="_blank" rel="noopener" class="project-link">
@@ -535,6 +535,7 @@
           <div class="edu-institution">
             <span class="edu-inst-name">Aberystwyth University</span>
             <span class="edu-inst-tag">Wales, UK · Est. 1872</span>
+            <span class="edu-inst-tag">Distinction track · 76% (Semester 1)</span>
           </div>
         </div>
         <div class="edu-period">Sep 2025 – Sep 2026</div>
@@ -545,7 +546,7 @@
         <p class="edu-dissertation-title">Fraud Detection Pipeline Using Analytics Engineering &amp; Machine Learning</p>
         <p class="edu-dissertation-desc">Tests whether disciplined analytics-engineering — structured dbt feature layers on BigQuery — measurably improves fraud-detection performance over raw inputs, evaluated with XGBoost and SHAP on the IEEE-CIS dataset. Supervised by Dr Bernie Tiddeman. The full build is featured in the Work section above.</p>
         <div class="edu-stack">
-          <span>BigQuery</span><span>dbt Core</span><span>Python</span><span>XGBoost</span><span>SHAP</span><span>Streamlit</span>
+          <span>BigQuery</span><span>dbt</span><span>Airflow</span><span>XGBoost</span><span>SHAP</span><span>Power BI</span>
         </div>
       </div>
 
@@ -575,7 +576,7 @@
         <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg></div>
         <h3 class="stack-label">Data &amp; SQL</h3>
         <div class="stack-chips">
-          <span>SQL</span><span>BigQuery</span><span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>dbt</span>
+          <span>SQL</span><span>BigQuery</span><span>Snowflake</span><span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>dbt</span>
         </div>
       </div>
 
@@ -591,7 +592,7 @@
         <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.14Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.14Z"/></svg></div>
         <h3 class="stack-label">Machine Learning</h3>
         <div class="stack-chips">
-          <span>XGBoost</span><span>SHAP</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Feature Engineering</span><span>Model Evaluation (AUC-ROC, PR-AUC)</span>
+          <span>XGBoost</span><span>Optuna</span><span>SHAP</span><span>scikit-learn</span><span>Pandas</span><span>Feature Engineering</span><span>Model Evaluation (AUC-ROC, PR-AUC)</span><span>LLM Integration</span>
         </div>
       </div>
 
@@ -607,7 +608,7 @@
         <div class="stack-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></div>
         <h3 class="stack-label">Engineering</h3>
         <div class="stack-chips">
-          <span>FastAPI</span><span>REST APIs</span><span>SQLAlchemy</span><span>Git</span><span>Linux</span><span>Docker</span>
+          <span>FastAPI</span><span>REST APIs</span><span>SQLAlchemy</span><span>Airflow</span><span>Docker</span><span>Git</span><span>GitHub Actions (CI/CD)</span><span>Linux</span>
         </div>
       </div>
 
