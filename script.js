@@ -9,7 +9,8 @@
   var rev = function (t) { return t.split('').reverse().join(''); };
   var address = rev(parts[1]) + String.fromCharCode(64) + rev(parts[0]);
   document.querySelectorAll('[data-email]').forEach(function (link) {
-    link.setAttribute('href', 'mai' + 'lto:' + address);
+    var subject = link.getAttribute('data-email-subject');
+    link.setAttribute('href', 'mai' + 'lto:' + address + (subject ? '?subject=' + encodeURIComponent(subject) : ''));
     if (link.hasAttribute('data-email-show')) link.textContent = address;
   });
 
