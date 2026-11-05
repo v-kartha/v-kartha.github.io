@@ -4,6 +4,15 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
+  // Email link, assembled in the browser so the address never appears in the page source
+  var parts = ['moc.liamg', 'keviv.ahtrak'];
+  var rev = function (t) { return t.split('').reverse().join(''); };
+  var address = rev(parts[1]) + String.fromCharCode(64) + rev(parts[0]);
+  document.querySelectorAll('[data-email]').forEach(function (link) {
+    link.setAttribute('href', 'mai' + 'lto:' + address);
+    if (link.hasAttribute('data-email-show')) link.textContent = address;
+  });
+
   // Project screenshot switcher
   document.querySelectorAll('[data-gallery]').forEach(function (gallery) {
     var main = gallery.querySelector('.gallery-main');
